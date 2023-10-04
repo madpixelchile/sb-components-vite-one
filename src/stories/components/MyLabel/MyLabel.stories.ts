@@ -20,7 +20,8 @@ const meta = {
         size: { control: 'inline-radio' },
         allCaps: {control: 'boolean'},
         color: { control: 'inline-radio' },
-        fontColor: { control: 'color' }
+        fontColor: { control: 'color' },
+        bgColor: { control: 'inline-radio' }
     },
 } satisfies Meta<typeof MyLabel>;
 
