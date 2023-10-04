@@ -1,6 +1,9 @@
 
 .label {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 4px 8px;
 }
 
 .normal {
@@ -30,9 +33,29 @@
     color: #ee6c4d;
 }
 
+.text-white{
+    color: white;
+}
+
 .all-caps-on{
     text-transform: capitalize;
 }
 .all-caps-off{
     text-transform: none;
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-primary{
+    background-color: #3d5a80;
+}
+
+.bg-secondary{
+    background-color: #98c1d9;
+}
+
+.bg-tertiary {
+    background-color: #ee6c4d;
 }

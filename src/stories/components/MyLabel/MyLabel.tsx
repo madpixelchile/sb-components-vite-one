@@ -18,11 +18,15 @@ interface Props {
   /**
       *Color
   */
-  color?: 'text-primary' | 'text-secondary' | 'text-tertiary';
+  color?: 'text-primary' | 'text-secondary' | 'text-tertiary' | 'text-white';
   /**
       *Font Color
   */
   fontColor?: string;
+  /**
+      *Background color
+  */
+  bgColor?: 'bg-primary' | 'bg-secondary' | 'bg-tertiary' | 'transparent';
 
 }
 
@@ -32,10 +36,11 @@ export const MyLabel = ({
   color,
   allCaps,
   fontColor,
+  bgColor,
 }: Props) => {
   return (
     <span
-      className={`label ${size} ${color} ${allCaps ? 'all-caps-on' : 'all-caps-off'}`}
+      className={`label ${size} ${color} ${allCaps ? 'all-caps-on' : 'all-caps-off'} ${bgColor}`}
       style={fontColor ? { color: fontColor } : {}}>
       {label}
     </span>
