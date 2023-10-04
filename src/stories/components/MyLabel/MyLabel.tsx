@@ -10,7 +10,7 @@ interface Props {
   /**
     *Label size
   */
-  size?: 'normal' | 'h1' | 'h2' | 'h3';
+  size?: 'normal' | 'h1' | 'h2' | 'h3' | 'h4';
   /**
       *All caps
   */
