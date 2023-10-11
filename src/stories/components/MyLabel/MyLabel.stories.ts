@@ -1,5 +1,5 @@
-import { StoryObj } from "@storybook/react";
-import { MyLabel } from "./MyLabel";
+import { Meta, StoryObj } from "@storybook/react";
+import { MyLabel } from "../../../components/MyLabel/MyLabel";
 
 const meta = {
     //Se recomienda generar un storybook a parte del proyecto final y con vite
@@ -29,6 +29,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>
 
+//Ejemplo de componente con sus props específicas aplicadas
 export const Basic: Story = {
     args:{
         label: 'Basic Label'

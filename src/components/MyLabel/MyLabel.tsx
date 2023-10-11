@@ -2,7 +2,7 @@
 
 import './MyLabel.css';
 
-interface Props {
+export interface MyLabelProps {
   /**
     *Label string
   */
@@ -37,7 +37,7 @@ export const MyLabel = ({
   allCaps,
   fontColor,
   bgColor,
-}: Props) => {
+}: MyLabelProps) => {
   return (
     <span
       className={`label ${size} ${color} ${allCaps ? 'all-caps-on' : 'all-caps-off'} ${bgColor}`}

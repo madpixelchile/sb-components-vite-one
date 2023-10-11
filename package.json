@@ -1,16 +1,32 @@
 {
-  "name": "my-storybook",
-  "private": true,
+  "name": "mp-my-storybook-components",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "typescript": ">=4.0.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "dev": "yarn run storybook",
-    "build": "tsc && vite build",
+    "build": "yarn clean && tsc && yarn copy-files",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_0cd55a683c5a580"
+    "chromatic": "npx chromatic --project-token=chpt_0cd55a683c5a580",
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 src/**/**/*.css dist/"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -31,14 +47,25 @@
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "chromatic": "^7.2.2",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^0.6.14",
+    "rimraf": "^5.0.5",
+    "semantic-release": "^22.0.5",
     "storybook": "^7.4.5",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
   "readme": "ERROR: No README data found!",
   "_id": "my-storybook@0.0.0"
 }
