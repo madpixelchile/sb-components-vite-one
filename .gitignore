@@ -7,10 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# testing 
+/coverage
+
 node_modules
 dist
 dist-ssr
 *.local
+
+# production
+/dist
+/build
+/storybook-static
 
 # Editor directories and files
 .vscode/*
