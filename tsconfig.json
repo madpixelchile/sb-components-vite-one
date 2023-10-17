@@ -3,8 +3,8 @@
     "outDir": "dist",
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "CommonJS",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "module": "commonjs",
     "skipLibCheck": true,
     "declaration": true,
     "declarationMap": true,
@@ -19,7 +19,7 @@
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames" : true,
+    "forceConsistentCasingInFileNames": true,
 
     /* Linting */
     "strict": true,
