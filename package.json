@@ -5,6 +5,7 @@
   "type": "module",
   "license": "MIT",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "release": {
     "branches": [
       "main"
