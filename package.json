@@ -9,6 +9,11 @@
       "main"
     ]
   },
+  "homepage": "http://proactivelatam.cl",
+  "repository": {
+    "url": "https://github.com/madpixelchile/sb-components-vite-one",
+    "type": "git"
+  },
   "peerDependencies": {
     "react": ">=16"
   },
