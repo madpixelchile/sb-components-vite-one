@@ -1,4 +1,7 @@
-export { Button } from './stories';
-export { Header } from './stories';
-export { MyLabel } from './stories';
-export { Page } from './stories';
+import { Button, Header, MyLabel, Page } from "./stories";
+export {
+    Button, 
+    Header,
+    MyLabel,
+    Page
+}
