@@ -9,7 +9,7 @@ export interface ContainerProps{
 export const Container = ( { children = null, className = '', ...props } : ContainerProps) => {
   return (
     <>
-        {  <StyledGrid className={`container ${className}`} {...props} >{ children }</StyledGrid>  }
+        {  <StyledGrid className={`${className === 'container-fluid' ? 'container-fluid' : 'container'} ${className}`} {...props} >{ children }</StyledGrid>  }
     </>
   )
 }
