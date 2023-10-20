@@ -6,10 +6,10 @@ interface Props{
     [key: string]: any;
 }
 
-export const Col = ( { children = null, className = '', ...props } : Props) => {
+export const Col = ( { children = null, className = 'col', ...props } : Props) => {
   return (
     <>
-        {  <StyledGrid className={`col ${className}`} {...props} >{ children }</StyledGrid>  }
+        {  <StyledGrid className={`${className}`} {...props} >{ children }</StyledGrid>  }
     </>
   )
 }
