@@ -13,7 +13,19 @@ yarn add madpixel-my-storybook-components
 [Storybook components](https://madpixelchile.github.io/sb-components-vite-one/?path=/docs/ui-labels-mylabel--docs)
 
 
-### Use of grid
+### Uso del tema
+
+Es importante envolver la aplicación en el HOC del tema, esto le añade estilos globales de reset y ajustes al html y body.
+
+```   
+    <MainTheme>
+        <MyApp>
+    </MainTheme>
+
+```
+
+
+### Uso de la grilla
 
 ```   
     <Container>
