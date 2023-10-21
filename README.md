@@ -10,7 +10,7 @@ yarn add madpixel-my-storybook-components
 
 
 ### Componentes en Storybook:
-[Storybook components](https://madpixelchile.github.io/sb-components-vite-one/?path=/docs/ui-labels-mylabel--docs)
+[Storybook components](https://651d88df917e7411d5ce6bdb-zvmytitobl.chromatic.com/?path=/docs/configure-your-project--docs)
 
 
 ### Uso del tema

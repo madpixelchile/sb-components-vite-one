@@ -5,7 +5,7 @@ import { StyledSmall } from "./StyledSmall";
 
 export interface TextProps {
     children?: React.ReactNode;
-    variant?: string;
+    variant?: 'p' | 'span' | 'small' | 'strong' | 'em';
     label?: string;
     [key: string]: any;
 }
@@ -14,7 +14,7 @@ export const Text: React.FC<TextProps> = (
     {
         children = null,
         variant = 'p',
-        label = 'Example text',
+        label = 'Texto de ejemplo',
         ...props
     }
 ) => {
