@@ -8,6 +8,9 @@ Este paquete está desarrollado para testeo de github actions con semantic auto 
 yarn add madpixel-my-storybook-components
 ```
 
+## Dependencias obligatorias del proyecto de destino
+
+Solo debemos tener instalado (react >=16)
 
 ### Componentes en Storybook:
 [Storybook components](https://651d88df917e7411d5ce6bdb-zvmytitobl.chromatic.com/?path=/docs/configure-your-project--docs)
@@ -66,3 +69,18 @@ Otra forma de usar etiquetas dentro de `<p><span>Hola mundo</span> <strong>Hola 
     <Text>Uso de textos</Text>
 
 ```
+
+
+## ¿Cómo sobreescribir estilos?
+
+Si bien podemos agregarle clases normales a los componentes, estas no lograrán sobreescribir los estilos, solo permitiran "agregarle nuevos" `<Text className={'nuevos-estilos'}></Text>`, por lo tanto, si por alguna razón necesitamos modificar los estilos del componente, debemos hacer lo siguiente:
+
+```
+const NewText = styled(Text)`
+    font-size: 40px;
+`;
+<Text>Hola mundo</Text>  ----> <NewText>Hola mundo</NewText>
+
+```
+
+Como resultado veremos que le agregará una nueva clase al componente en el output `<p class="sc-pNWRh czRlRI NUEVACLASEBZOL">Hola mundo</p>`
