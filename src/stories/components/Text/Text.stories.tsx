@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta } from "@storybook/react";
 import {Text, TextProps} from "../../../components/Text/Text";
 
 const meta = {
