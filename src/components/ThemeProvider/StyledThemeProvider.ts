@@ -23,7 +23,7 @@ export const StyledThemeProvider = createGlobalStyle`
         font-family: ${fontConfig['font-family-base']};
         text-rendering: geometricPrecision;
         position: relative;
-        background-color: $greyscale-white;
+        /* background-color: $greyscale-white; */
         color: ${colors['text-body']};
         width: 100%;
         height: 100%;

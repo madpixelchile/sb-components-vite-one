@@ -27,6 +27,8 @@ Es importante envolver la aplicación en el HOC del tema, esto le añade estilos
 
 ### Uso de la grilla
 
+El uso de la grilla va de acuerdo a bootstrap 4.0. 
+
 ```   
     <Container>
         <Row>
@@ -36,5 +38,19 @@ Es importante envolver la aplicación en el HOC del tema, esto le añade estilos
             </Col>
         </Row>
     </Container>
+
+```
+
+### Uso de headings
+
+Por defecto serán etiquetas `<h1></h1>`, también podemos agregar tamaños referentes a otros headings, por ejemplo, podremos tener `<h1 size={'h6'}></h1>` (h1 con el tamaño de un h6).
+
+```   
+    <Heading variant={'h1'}>Esto es un título</Heading>
+    <Heading variant={'h1'} size={'h2'}>Esto es un título</Heading>
+    <Heading variant={'h1'} size={'h3'}>Esto es un título</Heading>
+    <Heading variant={'h1'} size={'h4'}>Esto es un título</Heading>
+    <Heading variant={'h1'} size={'h5'}>Esto es un título</Heading>
+    <Heading variant={'h1'} size={'h6'}>Esto es un título</Heading>
 
 ```
