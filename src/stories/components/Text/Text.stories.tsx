@@ -25,8 +25,6 @@ const meta = {
 
 export default meta;
 
-// type Story = StoryObj<typeof meta>
-
 //Ejemplo de componente con sus props específicas aplicadas
 export const BasicText = ({ children, ...props }:TextProps)=>(
     <Text {...props} >{ children }</Text>
