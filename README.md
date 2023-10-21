@@ -76,10 +76,11 @@ Otra forma de usar etiquetas dentro de `<p><span>Hola mundo</span> <strong>Hola 
 Si bien podemos agregarle clases normales a los componentes, estas no lograrán sobreescribir los estilos, solo permitiran "agregarle nuevos" `<Text className={'nuevos-estilos'}></Text>`, por lo tanto, si por alguna razón necesitamos modificar los estilos del componente, debemos hacer lo siguiente:
 
 ```
-const NewText = styled(Text)`
+const CustomClassText = styled(Text)`
     font-size: 40px;
 `;
-<Text>Hola mundo</Text>  ----> <NewText>Hola mundo</NewText>
+
+<Text>Hola mundo</Text>  ----> <CustomClassText>Hola mundo</CustomClassText>
 
 ```
 
