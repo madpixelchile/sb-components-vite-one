@@ -3,14 +3,14 @@ import { StyledParagraph } from "./StyledParagraph";
 import { StyledSpan } from "./StyledSpan";
 import { StyledSmall } from "./StyledSmall";
 
-interface Props {
+export interface TextProps {
     children?: React.ReactNode;
     variant?: string;
     label?: string;
     [key: string]: any;
 }
 
-export const Text: React.FC<Props> = (
+export const Text: React.FC<TextProps> = (
     {
         children = null,
         variant = 'p',
