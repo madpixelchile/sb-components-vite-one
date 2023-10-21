@@ -19,9 +19,10 @@ Solo debemos tener instalado (react >=16)
 ### Uso del tema
 
 Es importante envolver la aplicación en el HOC del tema, esto le añade estilos globales de reset y ajustes al html y body.
+La prop "theme" es opcional, ya que por defecto vendrá el tema "light".
 
 ```   
-    <MainTheme>
+    <MainTheme theme={'dark'}>  // dark - light
         <MyApp>
     </MainTheme>
 
