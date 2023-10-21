@@ -17,7 +17,7 @@ const meta = {
     },
     //Para que en la documentación los tamaños salgan en formato radio y hacia el lado
     argTypes:{
-        variant: { control: 'select', options: ['p','span','strong','small'] },
+        variant: { control: 'select', options: ['p','span','strong','small', 'em'] },
         
     },
 } satisfies Meta<typeof Text>;

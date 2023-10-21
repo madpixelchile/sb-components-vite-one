@@ -58,7 +58,7 @@ Por defecto serán etiquetas `<h1></h1>`, también podemos agregar tamaños refe
 
 ### Uso de textos
 
-Por defecto serán etiquetas `<p></p>`, también podemos agregar variantes de texto para generar etiquetas `<span></span>`,`<small></small>`,`<strong></strong>`, usando la prop variant `<Text variant={'span'}></Text>`.
+Por defecto serán etiquetas `<p></p>`, también podemos agregar variantes de texto para generar etiquetas `<span></span>`,`<small></small>`,`<strong></strong>`,`<em></em>`, usando la prop variant `<Text variant={'span'}></Text>`.
 
 Otra forma de usar etiquetas dentro de `<p><span>Hola mundo</span> <strong>Hola mundo</strong></p>`
 

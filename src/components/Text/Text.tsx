@@ -24,6 +24,7 @@ export const Text: React.FC<TextProps> = (
             { variant === 'span' && <StyledSpan {...props}>{children || label}</StyledSpan> }
             { variant === 'small' && <StyledSmall {...props}>{children || label}</StyledSmall> }
             { variant === 'strong' && <strong {...props}>{children || label}</strong> }
+            { variant === 'em' && <em {...props}>{children || label}</em> }
         </>
     )
 }
