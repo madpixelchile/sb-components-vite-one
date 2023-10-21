@@ -54,3 +54,13 @@ Por defecto serán etiquetas `<h1></h1>`, también podemos agregar tamaños refe
     <Heading variant={'h1'} size={'h6'}>Esto es un título</Heading>
 
 ```
+
+
+### Uso de textos
+
+Por defecto serán etiquetas `<p></p>`, también podemos agregar variantes de texto para generar etiquetas `<span></span>`,`<small></small>`,`<strong></strong>`, usando la prop variant `<Text variant={'span'}></Text>`.
+
+```   
+    <Text>Uso de textos</Text>
+
+```
