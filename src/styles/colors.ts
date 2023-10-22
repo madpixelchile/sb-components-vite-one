@@ -7,7 +7,8 @@ export const colors = {
 
     ['btn-primary']: '#eaeaea',
     ['btn-primary-hover']: '#444444',
-    ['color-link']: '#007bff'
+    ['color-link']: '#007bff',
+    ['color-span']: '#007bff',
 }
 
 export const lightModeColors = {
