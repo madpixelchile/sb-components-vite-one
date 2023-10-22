@@ -10,7 +10,7 @@ yarn add madpixel-my-storybook-components
 
 ## Dependencias obligatorias del proyecto de destino
 
-Solo debemos tener instalado (react >=16)
+Solo debemos tener instalado (react >=16).
 
 ### Componentes en Storybook:
 [Storybook components](https://651d88df917e7411d5ce6bdb-zvmytitobl.chromatic.com/?path=/docs/configure-your-project--docs)
