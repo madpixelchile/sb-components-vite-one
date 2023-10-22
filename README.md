@@ -28,6 +28,31 @@ La prop "theme" es opcional, ya que por defecto vendrá el tema "light".
 
 ```
 
+### Personalizando el tema
+
+Para personalizar los colores generales del tema, podremos incorporarle los colores custom a través de un objeto, como lo veremos a continuación:
+
+```
+
+    const customThemeColors = {
+        primary: '#000000',
+        secondary: '#6c757d',
+        success: '#28a745',
+        ['btn-primary']: '#eaeaea',
+        ['btn-primary-hover']: '#444444',
+        ['color-link']: '#ff44e0',
+        ['color-span']: '#ff44e0',
+        ['text-body']: '#FFFFFF',
+        ['bg-color']: '#6b2981'
+    }
+
+
+    <MainTheme theme={customThemeColors}>
+        <ComponentList/>
+    </MainTheme>
+
+```
+
 
 ### Uso de la grilla
 
