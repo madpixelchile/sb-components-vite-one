@@ -1,9 +1,11 @@
 
 import { createGlobalStyle, css } from 'styled-components'
-import StyledReset from './Reset';
+import StyledReset from './StyledReset';
+import { StyledHelpers } from './StyledHelpers';
 
 export const StyledThemeProvider = createGlobalStyle`
 
+    //Reset
     ${StyledReset}
 
     ${({ theme }) => {
@@ -39,22 +41,8 @@ export const StyledThemeProvider = createGlobalStyle`
             `
     }}
 
-    
-
-    /* ${({ theme }) => {
-        if (theme) {
-            return css`
-                    body{
-                        background-color: red !important;
-                    }
-                `
-        }
-    }
-    } */
-
-
-
-    
+    //Helpers
+    ${StyledHelpers}
 
   
 `
