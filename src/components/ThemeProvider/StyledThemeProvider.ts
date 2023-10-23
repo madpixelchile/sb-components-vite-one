@@ -1,7 +1,6 @@
 
 import { createGlobalStyle, css } from 'styled-components'
 import StyledReset from './Reset';
-import fontConfig from '../../styles/fontConfig';
 
 export const StyledThemeProvider = createGlobalStyle`
 
@@ -9,9 +8,7 @@ export const StyledThemeProvider = createGlobalStyle`
 
     ${({ theme }) => {
 
-        const colors = {
-            ...theme
-        }
+        const { fontConfig, colors } = theme;   
 
         return css`
 

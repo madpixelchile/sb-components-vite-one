@@ -1,5 +1,6 @@
 import { Meta } from "@storybook/react";
 import {Text, TextProps} from "../../../components/Text/Text";
+import MainTheme from "../../../components/ThemeProvider/MainTheme";
 
 const meta = {
     //Se recomienda generar un storybook a parte del proyecto final y con vite
@@ -27,7 +28,9 @@ export default meta;
 
 //Ejemplo de componente con sus props específicas aplicadas
 export const BasicText = ({ children, ...props }:TextProps)=>(
-    <Text {...props} >{ children }</Text>
+    <MainTheme>
+        <Text {...props} >{ children }</Text>
+    </MainTheme>
 )
 
 

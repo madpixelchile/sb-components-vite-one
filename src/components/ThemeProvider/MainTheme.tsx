@@ -16,18 +16,18 @@ export const MainTheme = ({ children = null, theme = 'light' }:MainThemeProps) =
 
   if(typeof theme !== 'object'){
     if(theme === 'light'){
-      console.log('no object - string light - default lightModeAdded', theme);
+      //No object - string light - default lightModeAdded
       selectedTheme = lightMode;
     }else if(theme === 'dark'){
-      console.log('no object - string dark -  default darkModeAdded', theme);
+      //No object - string dark -  default darkModeAdded
       selectedTheme = darkMode;
     }
-  }else{
+  }else if(typeof theme === 'object'){
     if(Object.keys(theme).length === 0){ //!PENDING Compare with the final BASE required properties
-      console.log('empty object - default lightMode added', theme);
+      //Empty object - Default lightMode added
       selectedTheme = lightMode;
     }else{
-      console.log('full object - customMode or theme added', theme);
+      //Full object - CustomMode or theme added
       selectedTheme = theme;
     }
   }

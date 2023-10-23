@@ -25,6 +25,15 @@ export const fontConfig = {
     ['font-size-headline-5']: '36px',
     ['font-size-headline-6']: '32px',
 
+    ['font-size-subtitle-1']: ['font-size-headline-4'],
+    ['font-size-subtitle-2']: ['font-size-headline-5'],
+    ['font-size-subtitle-3']: ['font-size-headline-6'],
+    ['font-size-subtitle-4']: ['font-size-text-1'],
+
+    ['font-weight-regular']: 400,
+    ['font-weight-medium']: 500,
+    ['font-weight-bold']: 700,
+
 }
 
 export default fontConfig;

@@ -1,11 +1,12 @@
 
 import styled from "styled-components";
-import fontConfig from "../../styles/fontConfig";
 import breakpoints from "../../styles/breakpoints";
 
 export const StyledParagraph = styled.p`
 
     ${({ theme }) => {
+        const { fontConfig, colors } = theme;
+
         return `
 
             font-family: ${fontConfig["font-family-base"]};
@@ -17,7 +18,7 @@ export const StyledParagraph = styled.p`
             }
 
             span{
-                color: ${ theme['color-span']};
+                color: ${colors['color-span']};
             }
 
         `;

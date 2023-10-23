@@ -3,10 +3,22 @@
 
 import { lightModeColors, darkModeColors } from './colors';
 
+import fontConfig from './fontConfig';
+
 export const lightMode = {
-  ...lightModeColors
+  fontConfig: {
+    ...fontConfig,
+  },
+  colors: {
+    ...lightModeColors
+  }
 }
 
 export const darkMode = {
-  ...darkModeColors
+  fontConfig: {
+    ...fontConfig,
+  },
+  colors: {
+    ...darkModeColors
+  }
 }
