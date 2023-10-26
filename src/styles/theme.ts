@@ -2,10 +2,19 @@
 
 
 import { lightModeColors, darkModeColors } from './colors';
-
-import fontConfig from './fontConfig';
+import { 
+  breakpoints,
+  gutters,
+  fontConfig,
+} from './index';
 
 export const lightMode = {
+  breakpoints: {
+    ...breakpoints
+  },
+  gutters: {
+    ...gutters
+  },
   fontConfig: {
     ...fontConfig,
   },
@@ -15,6 +24,12 @@ export const lightMode = {
 }
 
 export const darkMode = {
+  breakpoints: {
+    ...breakpoints
+  },
+  gutters: {
+    ...gutters
+  },
   fontConfig: {
     ...fontConfig,
   },
