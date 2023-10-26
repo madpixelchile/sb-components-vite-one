@@ -8,6 +8,7 @@ const commonStyles = css`
         return `
             font-family: ${fontConfig['font-family-heading']};
             line-height: ${fontConfig['line-height-heading']};
+            margin-bottom: ${fontConfig['margin-bottom-heading']};
         `
     }}
 

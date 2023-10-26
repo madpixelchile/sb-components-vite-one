@@ -9,6 +9,8 @@ export const fontConfig = {
     ['line-height-heading']: '120%',
     ['line-height-initial']: 'initial',
 
+    ['margin-bottom-heading']: '1.2rem;',
+
     ['font-size-text-1']: '28px',
     ['font-size-text-2']: '24px',
     ['font-size-text-3']: '20px',
