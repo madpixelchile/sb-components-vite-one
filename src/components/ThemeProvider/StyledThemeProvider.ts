@@ -2,6 +2,7 @@
 import { createGlobalStyle, css } from 'styled-components'
 import StyledReset from './StyledReset';
 import { StyledHelpers } from './StyledHelpers';
+import { fontFace } from '../../styles/fontFace';
 
 export const StyledThemeProvider = createGlobalStyle`
 
@@ -13,6 +14,8 @@ export const StyledThemeProvider = createGlobalStyle`
         const { fontConfig, colors } = theme;   
 
         return css`
+
+                ${fontFace}
 
                 html {
                     box-sizing: border-box;

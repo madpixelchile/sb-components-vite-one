@@ -1,84 +1,126 @@
 
 import styled, { css } from "styled-components";
-import breakpoints from "../../styles/breakpoints";
-import fontConfig from "../../styles/fontConfig";
 
 const commonStyles = css`
-    font-family: ${fontConfig["font-family-base"]};
-    line-height: ${fontConfig["line-height-heading"]};
+
+    ${({ theme }) => {
+        const { fontConfig } =  theme;
+        return `
+            font-family: ${fontConfig['font-family-heading']};
+            line-height: ${fontConfig['line-height-heading']};
+        `
+    }}
+
 `;
 
 const h1Styles = css`
-  font-size: ${fontConfig["font-size-headline-6"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
-    font-size: ${fontConfig["font-size-headline-3"]};
-  }
+    ${({ theme }) => {
+        const { fontConfig, breakpoints } =  theme;
+        return `
+            font-size: ${fontConfig["font-size-headline-6"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
-    font-size: ${fontConfig["font-size-headline-1"]};
-  }
+            @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
+                font-size: ${fontConfig["font-size-headline-3"]};
+            }
+        
+            @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
+                font-size: ${fontConfig["font-size-headline-1"]};
+            }
+        `
+    }}
+
 `;
 
 const h2Styles = css`
-  font-size: ${fontConfig["font-size-text-2"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
-    font-size: ${fontConfig["font-size-headline-4"]};
-  }
+    ${({ theme }) => {
+        const { fontConfig, breakpoints } =  theme;
+        return `
+            font-size: ${fontConfig["font-size-text-2"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
-    font-size: ${fontConfig["font-size-headline-2"]};
-  }
+            @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
+                font-size: ${fontConfig["font-size-headline-4"]};
+            }
+        
+            @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
+                font-size: ${fontConfig["font-size-headline-2"]};
+            }
+        `
+    }}
+  
 `;
 
 const h3Styles = css`
-  font-size: ${fontConfig["font-size-text-3"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
-    font-size: ${fontConfig["font-size-headline-5"]};
-  }
+    ${({ theme }) => {
+        const { fontConfig, breakpoints } =  theme;
+        return `
+            font-size: ${fontConfig["font-size-text-3"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
-    font-size: ${fontConfig["font-size-headline-3"]};
-  }
+            @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
+                font-size: ${fontConfig["font-size-headline-5"]};
+            }
+        
+            @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
+                font-size: ${fontConfig["font-size-headline-3"]};
+            }
+        `
+    }}
+
+  
 `;
 
 const h4Styles = css`
-  font-size: ${fontConfig["font-size-text-4"]};
+    ${({ theme }) => {
+        const { fontConfig, breakpoints } =  theme;
+        return `
+            font-size: ${fontConfig["font-size-text-4"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
-    font-size: ${fontConfig["font-size-headline-6"]};
-  }
-
-  @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
-    font-size: ${fontConfig["font-size-headline-4"]};
-  }
+            @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
+                font-size: ${fontConfig["font-size-headline-6"]};
+            }
+        
+            @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
+                font-size: ${fontConfig["font-size-headline-4"]};
+            }
+        `
+    }}
 `;
 
 
 const h5Styles = css`
-  font-size: ${fontConfig["font-size-text-5"]};
+    ${({ theme }) => {
+        const { fontConfig, breakpoints } =  theme;
+        return `
+            font-size: ${fontConfig["font-size-text-5"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
-    font-size: ${fontConfig["font-size-text-1"]};
-  }
-
-  @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
-    font-size: ${fontConfig["font-size-headline-5"]};
-  }
+            @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
+                font-size: ${fontConfig["font-size-text-1"]};
+            }
+        
+            @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
+                font-size: ${fontConfig["font-size-headline-5"]};
+            }
+        `
+    }}
 `;
 
 const h6Styles = css`
-  font-size: ${fontConfig["font-size-text-6"]};
+    ${({ theme }) => {
+        const { fontConfig, breakpoints } =  theme;
+        return `
+            font-size: ${fontConfig["font-size-text-6"]};
 
-  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
-    font-size: ${fontConfig["font-size-text-2"]};
-  }
-
-  @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
-    font-size: ${fontConfig["font-size-headline-6"]};
-  }
+            @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
+                font-size: ${fontConfig["font-size-text-2"]};
+            }
+        
+            @media only screen and (min-width: ${breakpoints["screen-xl"]}) {
+                font-size: ${fontConfig["font-size-headline-6"]};
+            }
+        `
+    }}
 `;
 
 
