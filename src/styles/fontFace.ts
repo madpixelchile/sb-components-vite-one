@@ -2,9 +2,9 @@
 
 import { css } from "styled-components";
 
-import RobotoItalicWoff from './../../assets/fonts/Roboto-Italic.woff';
-import RobotoRegularWoff from './../../assets/fonts/Roboto-Regular.woff';
-import RobotoBoldWoff from './../../assets/fonts/Roboto-Bold.woff';
+import RobotoItalicWoff from './../assets/fonts/Roboto-Italic.woff';
+import RobotoRegularWoff from './../assets/fonts/Roboto-Regular.woff';
+import RobotoBoldWoff from './../assets/fonts/Roboto-Bold.woff';
 
 export const fontFace = css`
 
