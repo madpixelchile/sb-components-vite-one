@@ -6,7 +6,7 @@ export const fontConfig = {
     ['font-family-base']: `'Roboto', sans-serif`,
     ['font-family-heading']: `'Roboto', sans-serif`,
     ['line-height-base']: '150%',
-    ['line-height-heading']: '150%',
+    ['line-height-heading']: '120%',
     ['line-height-initial']: 'initial',
 
     ['font-size-text-1']: '28px',
