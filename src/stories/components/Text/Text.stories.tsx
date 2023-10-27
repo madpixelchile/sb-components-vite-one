@@ -5,7 +5,7 @@ import MainTheme from "../../../components/ThemeProvider/MainTheme";
 const meta = {
     //Se recomienda generar un storybook a parte del proyecto final y con vite
     //El slash genera la visualización en carpetas y subniveles en la navegación principal
-    title: 'UI/text/Text',
+    title: 'Components/text/Text',
     //El componente a incorporar en el muestrario
     component: Text,
 

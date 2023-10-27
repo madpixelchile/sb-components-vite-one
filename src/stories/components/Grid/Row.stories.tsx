@@ -9,7 +9,7 @@ import Text from "../../../components/Text/Text";
 const meta = {
     //Se recomienda generar un storybook a parte del proyecto final y con vite
     //El slash genera la visualización en carpetas y subniveles en la navegación principal
-    title: 'UI/grid/Row',
+    title: 'Components/grid/Row',
     //El componente a incorporar en el muestrario
     component: Row,
 

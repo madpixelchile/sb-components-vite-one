@@ -35,175 +35,123 @@ export const RightArrow = () => <svg
 
 <div className="sb-container">
   <div className='sb-section-title'>
-    # Configure your project
+    # Configuración del proyecto
 
-    Because Storybook works separately from your app, you'll need to configure it for your specific stack and setup. Below, explore guides for configuring Storybook with popular frameworks and tools. If you get stuck, learn how you can ask for help from our community.
+    Se recomeinda utilizar el instalador de React + Vite 
+
+    ```
+      yarn create vite
+    ```
   </div>
-  <div className="sb-section">
-    <div className="sb-section-item">
-      <img
-        src={Styling}
-        alt="A wall of logos representing different styling technologies"
-      />
-      <h4 className="sb-section-item-heading">Add styling and CSS</h4>
-      <p className="sb-section-item-paragraph">Like with web applications, there are many ways to include CSS within Storybook. Learn more about setting up styling within Storybook.</p>
-      <a
-        href="https://storybook.js.org/docs/react/configure/styling-and-css"
-        target="_blank"
-      >Learn more<RightArrow /></a>
-    </div>
-    <div className="sb-section-item">
-      <img
-        src={Context}
-        alt="An abstraction representing the composition of data for a component"
-      />
-      <h4 className="sb-section-item-heading">Provide context and mocking</h4>
-      <p className="sb-section-item-paragraph">Often when a story doesn't render, it's because your component is expecting a specific environment or context (like a theme provider) to be available.</p>
-      <a
-        href="https://storybook.js.org/docs/react/writing-stories/decorators#context-for-mocking"
-        target="_blank"
-      >Learn more<RightArrow /></a>
-    </div>
-    <div className="sb-section-item">
-      <img src={Assets} alt="A representation of typography and image assets" />
-      <div>
-        <h4 className="sb-section-item-heading">Load assets and resources</h4>
-        <p className="sb-section-item-paragraph">To link static files (like fonts) to your projects and stories, use the
-        `staticDirs` configuration option to specify folders to load when
-        starting Storybook.</p>
-        <a
-          href="https://storybook.js.org/docs/react/configure/images-and-assets"
-          target="_blank"
-        >Learn more<RightArrow /></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div className="sb-container">
   <div className='sb-section-title'>
-    # Do more with Storybook
+    # Instalación del code artifact package
 
-    Now that you know the basics, let's explore other parts of Storybook that will improve your experience. This list is just to get you started. You can customise Storybook in many ways to fit your needs.
+    Esto añadirá a las dependencias del proyecto todos los componentes correspondientes a este Design System.<br/>
+    Podremos ver en NPM el paquete y sus versiones de igual manera <a href="https://www.npmjs.com/package/madpixel-my-storybook-components" target="_blank">aquí</a>
+
+    ```
+      yarn add madpixel-my-storybook-components
+    ```
   </div>
 
-  <div className="sb-section">
-    <div className="sb-features-grid">
-      <div className="sb-grid-item">
-        <img src={Docs} alt="A screenshot showing the autodocs tag being set, pointing a docs page being generated" />
-        <h4 className="sb-section-item-heading">Autodocs</h4>
-        <p className="sb-section-item-paragraph">Auto-generate living,
-          interactive reference documentation from your components and stories.</p>
-        <a
-          href="https://storybook.js.org/docs/react/writing-docs/autodocs"
-          target="_blank"
-        >Learn more<RightArrow /></a>
-      </div>
-      <div className="sb-grid-item">
-        <img src={Share} alt="A browser window showing a Storybook being published to a chromatic.com URL" />
-        <h4 className="sb-section-item-heading">Publish to Chromatic</h4>
-        <p className="sb-section-item-paragraph">Publish your Storybook to review and collaborate with your entire team.</p>
-        <a
-          href="https://storybook.js.org/docs/react/sharing/publish-storybook#publish-storybook-with-chromatic"
-          target="_blank"
-        >Learn more<RightArrow /></a>
-      </div>
-      <div className="sb-grid-item">
-        <img src={FigmaPlugin} alt="Windows showing the Storybook plugin in Figma" />
-        <h4 className="sb-section-item-heading">Figma Plugin</h4>
-        <p className="sb-section-item-paragraph">Embed your stories into Figma to cross-reference the design and live
-          implementation in one place.</p>
-        <a
-          href="https://storybook.js.org/docs/react/sharing/design-integrations#embed-storybook-in-figma-with-the-plugin"
-          target="_blank"
-        >Learn more<RightArrow /></a>
-      </div>
-      <div className="sb-grid-item">
-        <img src={Testing} alt="Screenshot of tests passing and failing" />
-        <h4 className="sb-section-item-heading">Testing</h4>
-        <p className="sb-section-item-paragraph">Use stories to test a component in all its variations, no matter how
-          complex.</p>
-        <a
-          href="https://storybook.js.org/docs/react/writing-tests/introduction"
-          target="_blank"
-        >Learn more<RightArrow /></a>
-      </div>
-      <div className="sb-grid-item">
-        <img src={Accessibility} alt="Screenshot of accessibility tests passing and failing" />
-        <h4 className="sb-section-item-heading">Accessibility</h4>
-        <p className="sb-section-item-paragraph">Automatically test your components for a11y issues as you develop.</p>
-        <a
-          href="https://storybook.js.org/docs/react/writing-tests/accessibility-testing"
-          target="_blank"
-        >Learn more<RightArrow /></a>
-      </div>
-      <div className="sb-grid-item">
-        <img src={Theming} alt="Screenshot of Storybook in light and dark mode" />
-        <h4 className="sb-section-item-heading">Theming</h4>
-        <p className="sb-section-item-paragraph">Theme Storybook's UI to personalize it to your project.</p>
-        <a
-          href="https://storybook.js.org/docs/react/configure/theming"
-          target="_blank"
-        >Learn more<RightArrow /></a>
-      </div>
-    </div>
+  <div className='sb-section-title'>
+    # Utilización del paquete
+
+      Una vez instalado el paquete, debemos de envolver en el tema nuestro aplicativo, ya que es un HOC que puede alojar un children.<br/>
+
+      ```
+      <MainTheme theme={customThemeColors}>
+        <MyApp/>
+      </MainTheme>
+      ```
   </div>
+
+  <div className='sb-section-title'>
+    # Assets o recursos del paquete
+
+      El paquete incluye por defecto la tipografía Roboto junto a 3 variantes:<br/>
+      <ul>
+        <li>Roboto Regular</li>
+        <li>Roboto Bold</li>
+        <li>Roboto Italic</li>
+      </ul>
+  </div>
+
+  <div className='sb-section-title'>
+    # Personalización del design system
+
+      Podremos personalizar el tema utilizando styled-components, librería que se instalará por defecto dentro del proyecto al instalar el paquete,
+      para poder modificar los colores, quiebres, espacios, fuente tipográfica, etc. Debemos editar los archivos base de estilos
+      que podremos descargar <a href="#" title="Descargar configuración personalizada de estilos">aquí</a>.<br/>
+      
+  </div>
+  <div>
+    ## Configuración personalizada de estilos
+      Deberemos de respetar los nombres de las propiedades entregadas en el objeto de estilos y evitar eliminar propiedades, ya que serán utilizadas por
+      el tema. <br/>
+      Podremos añadir o reemplazar valores en su interior.<br/>
+      Su estructura será muy parecida al siguiente ejemplo:<br/> 
+
+      ```
+        //customTheme.js
+
+        export const customThemeColors = {
+            breakpoints: {
+                ...breakpoints
+            },
+            gutters: {
+                ...gutters
+            },
+            colors: {
+                ...colors
+            },
+            fontConfig: {
+                ...fontConfig
+            }
+        }
+
+      ```
+
+      ```
+        //App.js
+        import React from 'react'
+        import ReactDOM from 'react-dom/client'
+        import App from './App.tsx';
+        import { customTheme } from './styles/customTheme/customTheme';
+        ReactDOM.createRoot(document.getElementById('root')!).render(
+          <React.StrictMode>
+            <MainTheme theme={customThemeColors}>
+              <App />
+            </MainTheme>
+          </React.StrictMode>,
+        )
+
+      ```
+  </div>
+
+
+  <div>
+    ## ¿Cómo añadir clases a componentes provenientes del DSystem?
+      Si bien podemos agregarle clases normales a los componentes, estas no lograrán sobreescribir
+       los estilos, solo permitiran "agregarle nuevos" `<Text className={'nuevos-estilos'}></Text>`, por lo tanto,
+        si por alguna razón necesitamos modificar los estilos del componente, debemos hacer lo siguiente:
+
+      ```
+       const CustomClassText = styled(Text)`
+          font-size: 40px;
+      `;
+
+      <Text>Hola mundo</Text>  --> <CustomClassText>Hola mundo</CustomClassText>
+
+      ```
+
+  </div>
+  
 </div>
-<div className='sb-addon'>
-  <div className='sb-addon-text'>
-    <h4>Addons</h4>
-    <p className="sb-section-item-paragraph">Integrate your tools with Storybook to connect workflows.</p>
-    <a
-        href="https://storybook.js.org/integrations/"
-        target="_blank"
-      >Discover all addons<RightArrow /></a>
-  </div>
-  <div className='sb-addon-img'>
-    <img src={AddonLibrary} alt="Integrate your tools with Storybook to connect workflows." />
-  </div>
-</div>
 
-<div className="sb-section sb-socials">
-    <div className="sb-section-item">
-      <img src={Github} alt="Github logo" className="sb-explore-image"/>
-      Join our contributors building the future of UI development.
 
-      <a
-        href="https://github.com/storybookjs/storybook"
-        target="_blank"
-      >Star on GitHub<RightArrow /></a>
-    </div>
-    <div className="sb-section-item">
-      <img src={Discord} alt="Discord logo" className="sb-explore-image"/>
-      <div>
-        Get support and chat with frontend developers.
 
-        <a
-          href="https://discord.gg/storybook"
-          target="_blank"
-        >Join Discord server<RightArrow /></a>
-      </div>
-    </div>
-    <div className="sb-section-item">
-      <img src={Youtube} alt="Youtube logo" className="sb-explore-image"/>
-      <div>
-        Watch tutorials, feature previews and interviews.
 
-        <a
-          href="https://www.youtube.com/@chromaticui"
-          target="_blank"
-        >Watch on YouTube<RightArrow /></a>
-      </div>
-    </div>
-    <div className="sb-section-item">
-      <img src={Tutorials} alt="A book" className="sb-explore-image"/>
-      <p>Follow guided walkthroughs on for key workflows.</p>
-
-      <a
-          href="https://storybook.js.org/tutorials/"
-          target="_blank"
-        >Discover tutorials<RightArrow /></a>
-    </div>
-</div>
 
 <style>
   {`
