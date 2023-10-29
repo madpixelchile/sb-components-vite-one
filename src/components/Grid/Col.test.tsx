@@ -1,5 +1,5 @@
 
-import { render } from '@testing-library/react'; //screen
+import { render } from '@testing-library/react'; //screen screen.debug();
 import { Col } from './Col';
 import MainTheme from '../ThemeProvider/MainTheme';
 
@@ -13,8 +13,6 @@ describe('Testing Cols', () => {
 
         const classProp = container.getElementsByClassName('flex-column');
         expect(classProp.length).toBe(1)
-
-        // screen.debug();
 
         expect(container).toMatchSnapshot();
 

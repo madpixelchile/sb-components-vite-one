@@ -35,7 +35,7 @@ export const MainTheme = ({ children = null, theme = 'light' }:MainThemeProps) =
   return (
     <>
         <ThemeProvider theme={ selectedTheme }>
-            <StyledThemeProvider/>
+            <StyledThemeProvider />
             { children }
         </ThemeProvider>
     </>

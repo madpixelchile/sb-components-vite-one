@@ -1,11 +1,10 @@
 
 import {css} from "styled-components";
-import breakpoints from "../../styles/breakpoints";
 
 export const StyledHelpers = css`
 
-    ${() => {
-        // const { fontConfig, colors } = theme; //Pending breakpoints
+    ${({theme}) => {
+        const { breakpoints } = theme; //Pending breakpoints
         return `
         
         .d-none {
