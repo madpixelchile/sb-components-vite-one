@@ -11,10 +11,6 @@
     ]
   },
   "homepage": "http://proactivelatam.cl",
-  "repository": {
-    "url": "http://proactivelatam.cl",
-    "type": "git"
-  },
   "peerDependencies": {
     "react": ">=16"
   },
