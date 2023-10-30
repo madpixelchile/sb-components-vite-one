@@ -100,6 +100,12 @@ Para personalizar los colores y configuraciones generales del tema, podremos inc
 
 ```
 
+Si poseemos el archivo tsconfig.json y tenemos problemas con los tipos de la importación del tema, debemos configurar el siguiente apartado:
+
+```
+"allowJs": true,
+```
+
 
 ### Uso de la grilla
 
