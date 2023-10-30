@@ -13,7 +13,7 @@ yarn add madpixel-my-storybook-components
 Solo debemos tener instalado (react >=16).
 
 ### Componentes en Storybook:
-[Storybook components](https://651d88df917e7411d5ce6bdb-zvmytitobl.chromatic.com/?path=/docs/configure-your-project--docs)
+[Storybook components](https://651d88df917e7411d5ce6bdb-avkaxcykgr.chromatic.com/?path=/docs/components-button-button--docs)
 
 
 ### Uso del tema
