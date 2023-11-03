@@ -2,12 +2,14 @@ import React from "react";
 import { StyledParagraph } from "./StyledParagraph";
 import { StyledSpan } from "./StyledSpan";
 import { StyledSmall } from "./StyledSmall";
+import { AnyProp, ChildrenProp, LabelProp } from '../../types/types';
 
-export interface TextProps {
-    children?: React.ReactNode;
+export interface TextProps extends 
+ChildrenProp,
+LabelProp,
+AnyProp
+{
     variant?: 'p' | 'span' | 'small' | 'strong' | 'em';
-    label?: string;
-    [key: string]: any;
 }
 
 export const Text: React.FC<TextProps> = (
