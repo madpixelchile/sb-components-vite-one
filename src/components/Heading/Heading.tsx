@@ -1,12 +1,18 @@
 import React from "react";
 import { StyledHeading1, StyledHeading2, StyledHeading3, StyledHeading4, StyledHeading5, StyledHeading6 } from "./StyledHeadings";
+import { AnyProp, ChildrenProp, ClassNameProp, LabelProp } from "../../types/types";
 
-export interface HeadingProps {
-    children?: React.ReactNode;
-    variant?: string;
-    label?: string;
-    size?: string;
-    [key: string]: any;
+
+type HeadingSizeProp = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
+export interface HeadingProps extends
+ClassNameProp,
+ChildrenProp,
+LabelProp,
+AnyProp
+{
+    variant?: HeadingSizeProp;
+    size?: HeadingSizeProp;
 }
 
 export const Heading: React.FC<HeadingProps> = (

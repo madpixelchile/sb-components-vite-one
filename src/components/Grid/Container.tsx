@@ -1,10 +1,10 @@
+import { AnyProp, ChildrenProp, ClassNameProp } from "../../types/types";
 import { StyledGrid } from "./StyledGrid";
 
-export interface ContainerProps {
-  children?: React.ReactNode;
-  className?: string;
-  [key: string]: any;
-}
+export interface ContainerProps extends 
+ChildrenProp, 
+ClassNameProp, 
+AnyProp {}
 
 export const Container = ({ children = null, className = '', ...props }: ContainerProps) => {
    // Dividir las clases en un array

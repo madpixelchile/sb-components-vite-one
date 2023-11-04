@@ -1,10 +1,10 @@
+import { AnyProp, ChildrenProp, ClassNameProp } from "../../types/types";
 import { StyledGrid } from "./StyledGrid";
 
-interface Props{
-    children?: React.ReactNode;
-    className?: string;
-    [key: string]: any;
-}
+export interface Props extends 
+ChildrenProp, 
+ClassNameProp, 
+AnyProp {}
 
 export const Col = ( { children = null, className = 'col', ...props } : Props) => {
   return (
