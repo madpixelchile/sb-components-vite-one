@@ -49,7 +49,8 @@ const meta = {
 export default meta;
 
 //Ejemplo de componente con sus props específicas aplicadas
-export const BasicModal = ({ onHide, show, className, closeOuter, ...props }:ModalProps)=>{
+//Si no están presentes las props, se podrá editar en el inspector sin problemas.
+export const BasicModal = ({ onHide, show, ...props }:ModalProps)=>{
     const [modalShow, setModalShow] = useState(false);
     return (
         <MainTheme theme={'dark'}>

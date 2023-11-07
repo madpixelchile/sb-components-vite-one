@@ -5,11 +5,6 @@ import ReactDOM from 'react-dom';
 import { StyledModal } from './StyledModal';
 import { AnyProp, ChildrenProp, ClassNameProp } from '../../types/types';
 
-// const defaultProps = {
-//     show: true,
-//     defaultClose: true,
-//     closeOuter: true
-// };
 
 export interface ModalProps extends
     ClassNameProp,
@@ -22,7 +17,7 @@ export interface ModalProps extends
 }
 
 export const Modal = ({
-    className,
+    className = '',
     children,
     show = true,
     defaultClose = true,
@@ -55,10 +50,10 @@ export const Modal = ({
             }, 100);
         } else {
             setModalFadeIn(false);
-            initModalFadeOut = setTimeout(() => {
-                setCreateModal(false);
-                clearTimeout(initModalFadeOut);
-            }, 600);
+            // initModalFadeOut = setTimeout(() => {
+            //     setCreateModal(false);
+            //     clearTimeout(initModalFadeOut);
+            // }, 600);
         }
         return () => {
             clearTimeout(initModalFadeIn);
@@ -69,7 +64,7 @@ export const Modal = ({
 
     const modalBuild = () => {
         return (
-            <StyledModal className={`modal ${modalFadeIn ? 'active' : ''} ${className ? className : ''}`} {...props}>
+            <StyledModal className={`modal ${modalFadeIn ? 'active' : ''} ${ className }`} {...props}>
                 <div className={'modal__box'}>
                     <div className={'modal__cont'}>
                         {
