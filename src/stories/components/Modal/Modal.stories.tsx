@@ -6,6 +6,8 @@ import { useState } from "react";
 import Row from "../../../components/Grid/Row";
 import Col from "../../../components/Grid/Col";
 import Container from "../../../components/Grid/Container";
+import Heading from "../../../components/Heading/Heading";
+import Text from "../../../components/Text/Text";
 
 const meta = {
     //Se recomienda generar un storybook a parte del proyecto final y con vite
@@ -65,7 +67,11 @@ export const BasicModal = ({ onHide, show, ...props }:ModalProps)=>{
                 <Container variant={'container-fluid'}>
                     <Row>
                         <Col className={'col justify-content-center'}>
-                            <span>Acá va el contenido de la modal</span>
+                            <Heading variant={'h5'}>Hola mundo</Heading>
+                            <Text>Acá va el contenido de la modal <strong>Strong</strong> <span>mi span</span> <em>Mi em</em></Text>
+                            <div className="mt-4">
+                                <Button onClick={() => setModalShow(false)}>Cerrar</Button>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
